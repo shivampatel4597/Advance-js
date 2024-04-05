@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  
+    let obj = {
+        age: 14,
+        address: "rewa",
+        phoneno: 9893359097,
+        name: "shivam",
+      };
+    
+
+        for (key in obj) {
+          console.log(obj[key]);
+        }  */
+      // -------------------------------
+      /*
+  let arr = [1, 2, 3, 4, 5];
+      let newArr = arr.map((element) => {
+        console.log(element);
+        return element;
+      });
+      console.log(newArr.reverse());
+      console.log(arr);*/
+      //   ------------------------
+
+      //   inside obj this keyword refers to current execution context means that object itself
+      // normally it refers to global object
+      /* let obj = {
+        age: 14,
+        address: "rewa",
+        hobby: "exercise",
+        phoneno: 9893359097,
+        work: function () {
+          console.log("working on myself......", this.array);
+
+          //   return "working on myself......";
+        },
+        array: [1, 2, 3, 4, 5],
+      };
+
+      console.log(obj.work());  */
+
+      //   if we dont retun gives undefined after console
+
+      //   --------------------------------
+
+      function callbackFunction(){
+        console.log("callback function");
+      }
+      function higherOrder(fun) {
+        console.log("higher order function");
+        fun();
+      }
+      higherOrder(callbackFunction);
+    </script>
+  </body>
+</html>
